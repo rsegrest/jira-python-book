@@ -1,0 +1,4 @@
+atlassian_venv/
+**/__pycache__/**/*
+jira.cfg
+
