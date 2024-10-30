@@ -9,6 +9,7 @@ from interface.search_issues import get_linked_issues_for_epiclist
 
 # used by app.py
 def create_spreadsheet(issuetype=None):
+    print("*** CREATE SPREADSHEET")
     results = get_linked_issues_for_epiclist(issuetype)
     issues = results['issues']
     results_array = convert_to_rows_array(issues)

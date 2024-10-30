@@ -51,7 +51,8 @@ def results(issuetype=None, status=None, do_export=False):
         return create_spreadsheet()
     else:
         results_table = build_html_table(issuetype)
-        return render_template("results.html", results_table=results_table)
+        export_url="/results/"+issuetype+"/export"
+        return render_template("results.html", results_table=results_table, export_url=export_url)
     
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

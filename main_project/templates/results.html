@@ -4,6 +4,8 @@
             <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }}>
             <script type="text/javascript">
                 function exportClickHandler(export_url) {
+                    console.log("EXPORT URL:")
+                    console.log(export_url)
                     window.open(export_url, '_blank')
                 }
             </script>
