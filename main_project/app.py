@@ -48,7 +48,7 @@ def results(issuetype=None, status=None, do_export=False):
     """
     print(do_export)
     if do_export == 'export':
-        return create_spreadsheet()
+        return create_spreadsheet(issuetype)
     else:
         results_table = build_html_table(issuetype)
         export_url="/results/"+issuetype+"/export"
